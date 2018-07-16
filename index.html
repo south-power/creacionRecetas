@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+  <script src="./script.js"></script>
+  <title>Document</title>
+</head>
+<body>
+  
+  <form method="POST" enctype="multipart/form-data">
+    <div class="recipe-name">
+      <input name="name" placeholder="Introduce el nombre de la receta">
+    </div>
+    <div id="ingredients">
+      <h2 for="ingredients">Ingredientes</h2>
+      <div class="ingredient">
+        <input id="quantity0" type="text" placeholder="Cantidad">
+        <input id="ingredient0" type="text" placeholder="Ingrediente">
+      </div>
+      <button id="addIngredient">Add</button>
+    </div>
+    <div id="steps">
+      <h2>Pasos</h2>
+      <div class="step">
+        <textarea id="step0" placeholder="Paso 1" rows="5"></textarea>
+      </div>
+      <button id="addStep">Add</button>
+    </div>
+    <div class="photo">
+      <h2>Foto de la receta</h2>
+       <input type="file" name="photo">
+    </div>
+  </form>  
+</body>
+</html>
